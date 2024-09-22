@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transforms</title>
+    <style>
+*{
+box-sizing:border-box;
+
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgrey;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #007bff;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .translate-x {
+background-color:cyan;
+            transform: translateX(100px);
+        }
+        
+        .translate-y {
+            transform: translateY(100px);
+background-color:black;
+color:white;
+        }
+        
+        .translate-xy {
+            transform: translate(100px, 100px);
+background-color:grey;
+        }
+
+        .rotate-45 {
+            transform: rotate(45deg);
+background-color:lightgreen;
+        }
+        
+        .rotate-90 {
+            transform: rotate(90deg);
+background-color:tomato;
+        }
+        
+        .rotate-180 {
+            transform: rotate(180deg);
+background-color:#45069e;
+        }
+
+        .scale-x {
+            transform: scaleX(2);
+background-color:#f2f484;
+        }
+        
+        .scale-y {
+            transform: scaleY(2);
+background-color:#c68f53;
+        }
+        
+        .scale-xy {
+            transform: scale(2);
+background-color:#c653b9;
+        }
+        
+        .skew-x {
+            transform: skewX(45deg);
+background-color:#ffe2bc;
+        }
+        
+        .skew-y {
+            transform: skewY(45deg);
+background-color:#d8bcff;
+        }
+        
+        .skew-xy {
+            transform: skew(45deg, 45deg);
+background-color:#bcffe8;
+        }
+#cmt{
+margin-top:10%;
+}
+                .combine {
+margin-top:40%;
+            transform: translateX(100px) rotate(45deg) scale(2) skewX(45deg);
+background-color:#fcec92;
+        }
+#transform{
+margin-top:30%;
+}
+.animation-1{
+display:block;
+background-color:#92fcee;
+animation:ani1 8s infinite normal ease-in;
+}
+@keyframes ani1{
+20%{transform: translatex(20%)}
+40%{transform: translateY(40%)}
+60%{transform: translatex(60%)}
+80%{transform: translatey(-50%)}
+100%{transform: translatex(300%)}
+}
+.animation-2{
+display:block;
+background-color:#92fcb9;
+animation:ani2 5s infinite reverse linear;
+}
+@keyframes ani2{
+from{transform:translatex(300%)}
+20%{transform: rotatex(20deg)}
+40%{transform: rotateY(-40deg)}
+60%{transform: rotatez(60deg)}
+80%{transform: rotatey(-50deg)}
+90%{transform: rotatex(100deg)}
+95%{transform:scale(2,1)}
+}
+.animation-3{
+display:block;
+background-color:#9b92fc;
+animation:ani3 7s infinite alternate linear;
+}
+@keyframes ani3{
+to{transform:translatex(300%)}
+10% {transform:rotatez(270deg)}
+30% {transform:rotatez(2000deg)}
+50% {transform:rotatez(360deg)}
+70% {transform:rotatez(90deg)}
+90% {transform:rotatez(230deg)}
+100% {transform:rotatez(360deg)}
+}
+.animation-4{
+display:block;
+background-color:#fce792;
+animation:ani4 2s infinite alternate-reverse linear;
+}
+@keyframes ani4{
+to {transform: translatex(260%)}
+30%{transform: rotatex(270deg)}
+40%{transform: rotateY(-40deg)}
+60%{transform: rotatez(60deg)}
+80%{transform:scale(2,1)}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Transforms</h1>
+        <h2>Translate</h2>
+        <div class="box translate-x">Translate X</div>
+        <div class="box translate-y">Translate Y</div>
+        <div class="box translate-xy">Translate XY</div>
+        
+        <h2>Rotate</h2>
+        <div class="box rotate-45">Rotate 45deg</div>
+        <div class="box rotate-90">Rotate 90deg</div>
+        <div class="box rotate-180">Rotate 180deg</div>
+        
+        <h2>Scale</h2>
+        <div class="box scale-x">Scale X</div>
+        <div class="box scale-y">Scale Y</div>
+        <div class="box scale-xy">Scale XY</div>
+        
+        <h2>Skew</h2>
+        <div class="box skew-x">Skew X</div>
+        <div class="box skew-y">Skew Y</div>
+        <div class="box skew-xy">Skew XY</div>
+        
+        <h2 id="cmt">Combine multiple transforms</h2>
+        <div class="box combine">Combine</div>
+<h2 id="transform">Transforms Using @Keyframes </h2>
+<div class="box animation-1"> </div>
+<div class="box animation-2"> </div>
+<div class="box animation-3"> </div>
+<div class="box animation-4"> </div>
+    </div>
+</body>
+</html>
