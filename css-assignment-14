@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animations</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        
+        h1 {
+            margin: 20px;
+            margin-left: 40%;
+color:white;
+        }
+        
+        .animations {
+            height: 30vh;
+            width: 550px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            gap: 27px;
+            margin-left: 30%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .box {
+            height: 150px;
+            width: 250px;
+            border-radius: 4px;
+        }
+        
+        #box-1 {
+            background-color: lightgreen;
+            animation: animateBox1 5s infinite normal ease-in;
+        }
+        
+        #box-2 {
+            background-color: red;
+            animation: animateBox2 5s infinite reverse running ease-out;
+        }
+        
+        #box-3 {
+            background-color: blue;
+            animation: animateBox3 4s infinite alternate ease-in-out;
+        }
+        
+        #box-4 {
+            background-color: green;
+            animation: animateBox4 4s infinite alternate-reverse ease-in;
+        }
+        
+        #box-5 {
+            background-color: yellow;
+            animation: animateBox5 4s infinite normal linear;
+        }
+        
+        #box-6 {
+            background-color: purple;
+            animation: animateBox6 5s infinite linear normal;
+        }
+        
+        @keyframes animateBox1 {
+            20% { background-color: grey; }
+            40% { background-color: yellow; }
+            60% { background-color: tomato; }
+            80% { background-color: cyan; }
+            100% { background-color: lightgreen; }
+        }
+        
+        @keyframes animateBox2 {
+            20% { background-color: #327ffc; }
+            40% { background-color: #3cc7d1; }
+            60% { background-color: #3cd190; }
+            80% { background-color: #ffe7d6; }
+            100% { background-color: #dad6ff; }
+        }
+        
+        @keyframes animateBox3 {
+            20% { background-color: #6d7a8e; }
+            40% { background-color: #6d5201; }
+            60% { background-color: #6d5201; }
+            80% { background-color: #016d52; }
+            100% { background-color: #3cd190; }
+        }
+        
+        @keyframes animateBox4 {
+            20% { background-color: #0b12e0; }
+            40% { background-color: #e00b7c; }
+            60% { background-color: #d90be0; }
+            80% { background-color: #0be0cb; }
+            100% { background-color: #20e00b; }
+        }
+        
+        @keyframes animateBox5 {
+            0% {
+                opacity: 1;
+            }
+            20% { opacity: 0.5; }
+            40% { opacity: 0.4; }
+            60% { opacity: 0.3; }
+            80% { opacity: 0.2; }
+            90% { opacity: 0.1; }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes animateBox6 {
+            20% { background-color: #0be060; }
+            40% { background-color: #fcd38d; }
+            60% { background-color: #2815f2; }
+            80% { background-color: #16f91a; }
+            100% { background-color: #f916ea; }
+        }
+        h2{
+ margin-top: 10%;
+            margin-left: 40%;
+color:white;
+}
+
+        .animation {
+height:100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 80px;
+cursor:pointer;
+        }
+        
+        .bx {
+            height: 150px;
+            width: 150px;
+            border-radius: 4px;
+            margin: 10px;
+        }
+        
+        #animation-1 {
+            background-color: cyan;
+animation:anibx1 3s infinite reverse linear;
+        }
+       
+        #animation-2 {
+            background-color: cyan;
+animation:anibx2 3s infinite normal ease-in;
+        }
+        
+        #animation-3 {
+            background-color: tomato;
+animation:anibx3 2s infinite normal ease-in-out;
+        }
+        
+        #animation-4 {
+            background-color: lightgreen;
+animation:anibx3 1s infinite alternate-reverse ease;
+        }
+@keyframes anibx1 {
+10% { background-color: #0be060; }
+20% { background-color: #fcd38d; }
+30% { background-color: #2815f2; }
+40% { background-color: #16f91a; }
+50% { background-color: #f916ea; }
+60% { background-color: #0be060; }
+80% { background-color: #fcd38d; }
+90% { background-color: #2815f2; }
+100% { background-color: #f916ea; }
+        }
+   @keyframes anibx2 {
+            20% { background-color: grey; }
+            40% { background-color: yellow; }
+            60% { background-color: tomato; }
+            80% { background-color: cyan; }
+            100% { background-color: lightgreen; }
+        }
+        @keyframes anibx3 {
+            20% { background-color: #0b12e0; }
+            40% { background-color: #e00b7c; }
+            60% { background-color: #d90be0; }
+            80% { background-color: #0be0cb; }
+            100% { background-color: #20e00b; }
+        }
+   @keyframes anibx4 {
+            20% { background-color: #327ffc; }
+            40% { background-color: #3cc7d1; }
+            60% { background-color: #3cd190; }
+            80% { background-color: #ffe7d6; }
+            100% { background-color: #dad6ff; }
+        }
+.ani {
+height:100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 80px;
+cursor:pointer;
+        }
+        
+        .b {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        
+        #ani-1 {
+            background-color: cyan;
+animation:anib1 3s infinite reverse linear;
+        }
+       
+        #ani-2 {
+            background-color: cyan;
+animation:anib2 3s infinite normal ease-in;
+        }
+        
+        #ani-3 {
+            background-color: tomato;
+animation:anib3 2s infinite normal ease-in-out;
+        }
+        
+        #ani-4 {
+            background-color: lightgreen;
+animation:anib4 1s infinite alternate-reverse ease;
+        }
+@keyframes anib1 {
+10% { background-color: #0be060; }
+20% { background-color: #fcd38d; }
+30% { background-color: #2815f2; }
+40% { background-color: #16f91a; }
+50% { background-color: grey; }
+            60% { background-color: yellow; }
+            70% { background-color: tomato; }
+            80% { background-color: cyan; }
+            100% { background-color: lightgreen; }
+
+        }
+   @keyframes anib2 {
+  20% { background-color: #0b12e0; }
+            40% { background-color: #e00b7c; }
+            60% { background-color: #d90be0; }
+            80% { background-color: #0be0cb; }
+            100% { background-color: #20e00b; }
+          
+        }
+        @keyframes anib3 {
+ 20% { background-color: grey; }
+            40% { background-color: yellow; }
+            60% { background-color: tomato; }
+            80% { background-color: cyan; }
+            100% { background-color: lightgreen; }
+        }
+   @keyframes anib4 {
+            20% {background-color: #dad6ff; }
+            40% { background-color: #3cc7d1; }
+            60% { background-color: #3cd190; }
+            80% { background-color: #327ffc; }
+            100% { background-color: #ffe7d6; }
+        }background-color: #ffe7d6;
+    </style>
+</head>
+<body>
+    <h1>ANIMATIONS </h1>
+    <div class="animations">
+        <div id="box-1" class="box"></div>
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+        <div id="box-4" class="box"></div>
+        <div id="box-5" class="box"></div>
+        <div id="box-6" class="box"></div>
+    </div>
+<h2>Magical Cubes!! </h2>
+    <div class="animation">
+        <div id="animation-1" class="bx"></div>
+        <div id="animation-2" class="bx"></div>
+        <div id="animation-3" class="bx"></div>
+        <div id="animation-4" class="bx"></div>
+    </div>
+<h2>Magical Circles!! </h2>
+    <div class="ani">
+        <div id="ani-1" class="b"></div>
+        <div id="ani-2" class="b"></div>
+        <div id="ani-3" class="b"></div>
+        <div id="ani-4" class="b"></div>
+    </div>
+</body>
+</html>
